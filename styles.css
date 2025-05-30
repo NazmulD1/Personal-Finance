@@ -1,0 +1,157 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #F7FAFC; /* light background */
+    color: #23395B; /* dark blue-gray text */
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #0B3D91, #1CA9C9); /* deep blue to teal */
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 640px;
+    margin: 0 auto 25px;
+    opacity: 0.9;
+  }
+  
+  /* Buttons */
+  .btn,
+  .btn-primary,
+  .btn-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background: #1CA9C9; /* teal */
+    color: #fff;
+    border: 2px solid transparent;
+  }
+  
+  .btn-primary:hover {
+    background: #17A2B8; /* darker teal */
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background: #0B3D91; /* deep blue */
+    color: #fff;
+  }
+  
+  .btn-secondary:hover {
+    background: #08306B; /* darker navy */
+  }
+  
+  .btn {
+    background: #23395B; /* blue-gray */
+    color: #fff;
+  }
+  
+  .btn:hover {
+    background: #182C45;
+  }
+  
+  /* Bubbles Section */
+  .bubbles h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    color: #0B3D91;
+  }
+  
+  .bubble-category {
+    margin-bottom: 60px;
+  }
+  
+  .bubble-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1CA9C9;
+  }
+  
+  /* Grid and Cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h4 {
+    margin-bottom: 10px;
+    color: #0B3D91;
+    font-size: 1.2rem;
+  }
+  
+  .card p {
+    color: #23395B;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .card ul {
+    margin-left: 18px;
+    margin-bottom: 15px;
+    list-style: disc;
+    color: #23395B;
+    font-size: 0.95rem;
+  }
+  
+  .card.highlight {
+    border-left: 5px solid #1CA9C9; /* teal accent */
+    background: #E6F4F7; /* very light teal background */
+  }
+  
+  /* Footer */
+  .footer {
+    background: #0B3D91;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
