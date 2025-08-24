@@ -25,7 +25,7 @@ html {
 
 /* Offset for fixed navbar */
 :target {
-  scroll-margin-top: 80px; /* navbar height */
+  scroll-margin-top: 100px; /* matches navbar height */
 }
 
 /* Navbar */
@@ -35,9 +35,12 @@ html {
   left: 0;
   width: 100%;
   background: #fff;
-  padding: 15px 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: 100px; /* accommodates larger logo */
+  display: flex;
+  align-items: center; /* vertically center contents */
+  padding: 0 20px;
 }
 
 .nav-container {
@@ -49,11 +52,17 @@ html {
   align-items: center;
 }
 
-.logo {
-  color: #0077cc;
-  font-size: 1.3rem;
-  font-weight: 700;
-  text-decoration: none;
+/* Logo image styling */
+.logo img {
+  height: 100px;  /* larger logo */
+  width: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover bubble effect on logo */
+.logo img:hover {
+  transform: scale(1.15);
 }
 
 /* Nav links */
@@ -61,6 +70,14 @@ html {
   list-style: none;
   display: flex;
   gap: 25px;
+  align-items: center; /* vertically center links with logo */
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center; /* vertically center links with logo */
+  margin-left: auto;   /* pushes nav links to the far right */
 }
 
 .nav-links li a {
@@ -100,7 +117,7 @@ html {
 
   .nav-links {
     position: absolute;
-    top: 60px;
+    top: 100px; /* below navbar */
     right: 0;
     background: #fff;
     width: 200px;
@@ -125,7 +142,7 @@ html {
   background: linear-gradient(135deg, #0B3D91, #1CA9C9);
   color: #fff;
   text-align: center;
-  padding: 120px 20px 80px; /* extra padding because of fixed nav */
+  padding: 140px 20px 80px; /* adjust for taller navbar */
 }
 
 .hero h1 {
