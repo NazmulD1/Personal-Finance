@@ -265,13 +265,27 @@ html {
 }
 
 /* Footer */
+/* Footer */
 .footer {
   background: #0B3D91;
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 18px 0;
   font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05); /* subtle soft shadow */
 }
+
+.footer .container {
+  padding: 0; /* no extra space */
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.9; /* slightly softer text */
+  letter-spacing: 0.3px;
+}
+
+
 
 .video-container {
   position: relative;
