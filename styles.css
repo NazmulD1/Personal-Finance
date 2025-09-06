@@ -303,45 +303,32 @@ html {
   width: 100%;
   height: 100%;
 }
+/* Base logo styling */
+.logo-img {
+  margin-bottom: 15px;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease; /* smooth hover */
+  cursor: pointer; /* clickable feel */
+}
 
+.logo-img:hover {
+  transform: scale(1.05); /* zoom in slightly */
+  filter: brightness(80%); /* slightly darker on hover */
+}
+
+/* Size variations */
 .card-logo {
   max-width: 270px;
-  margin-bottom: 15px;
-  display: block;
-  transition: transform 0.3s ease; /* smooth hover effect */
-  cursor: pointer; /* makes it feel clickable */
 }
 
-.card-logo:hover {
-  transform: scale(1.05); /* zoom in slightly */
-  filter: brightness(80%); /* makes the logo slightly darker */
-
-}
-
-.citi-logo {
-  max-width: 100px;
-  margin-bottom: 15px;
-  display: block;
-  transition: transform 0.3s ease; /* smooth hover effect */
-  cursor: pointer; /* makes it feel clickable */
-}
-
-.citi-logo:hover {
-  transform: scale(1.05); /* zoom in slightly */
-  filter: brightness(80%); /* makes the logo slightly darker */
-
+.bilt-logo {
+  max-width: 250px;
 }
 
 .chase-logo {
-  max-width: 200px;
-  margin-bottom: 15px;
-  display: block;
-  transition: transform 0.3s ease; /* smooth hover effect */
-  cursor: pointer; /* makes it feel clickable */
+  max-width: 260px;
 }
 
-.chase-logo:hover {
-  transform: scale(1.05); /* zoom in slightly */
-  filter: brightness(80%); /* makes the logo slightly darker */
-
+.citi-logo {
+  max-width: 150px;
 }
