@@ -317,3 +317,31 @@ html {
   filter: brightness(80%); /* makes the logo slightly darker */
 
 }
+
+.citi-logo {
+  max-width: 100px;
+  margin-bottom: 15px;
+  display: block;
+  transition: transform 0.3s ease; /* smooth hover effect */
+  cursor: pointer; /* makes it feel clickable */
+}
+
+.citi-logo:hover {
+  transform: scale(1.05); /* zoom in slightly */
+  filter: brightness(80%); /* makes the logo slightly darker */
+
+}
+
+.chase-logo {
+  max-width: 200px;
+  margin-bottom: 15px;
+  display: block;
+  transition: transform 0.3s ease; /* smooth hover effect */
+  cursor: pointer; /* makes it feel clickable */
+}
+
+.chase-logo:hover {
+  transform: scale(1.05); /* zoom in slightly */
+  filter: brightness(80%); /* makes the logo slightly darker */
+
+}
